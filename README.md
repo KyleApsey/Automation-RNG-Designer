@@ -1,8 +1,8 @@
 <h1>Automation - Random Car Generator</h1>
-<h2 style="font-style: italic;">pre-release v0.1</h2>
+<h2>pre-release v0.1</h2>
 <p>Randomize the creation of car configurations for the PC game: Automation - A Car Manufacturing Tycoon Game</p>
 <h3>Changelog</h3>
-<h4 style="font-style: italic;">----- March 3rd, 2020 -----</h4>
+<h4>----- March 3rd, 2020 -----</h4>
 <p>Basic proof of concept.  Some features are working, but others are not yet complete.  The following lists detail the functionally complete and functionally incomplete features as of v0.1</p>
 <ul>
     <li>Functionally Complete
