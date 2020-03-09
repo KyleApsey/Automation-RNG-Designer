@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Automation - Random Car Generator</title>
+	</head>
+	<body>
+		<main class="main">
+			<h1>Automation - Random Car Generator</h1>
+			<section class="model-designer">
+				<!-- Model Designer -->
+				<h2>Model Designer</h2>
+				<div class="model-designer__body">
+					<h3>Model Year</h3>
+					<form class="js-model-year">
+						<!-- included years -->
+						<div class="checkbox-wrapper">
+							<h4>Included Years</h4>
+							<input
+								type="checkbox"
+								id="years-included40"
+								name="years-included"
+								value="1940"
+							/>
+							<label for="years-included40">1940s</label>
+							<input
+								type="checkbox"
+								id="years-included50"
+								name="years-included"
+								value="1950"
+							/>
+							<label for="years-included50">1950s</label>
+							<input
+								type="checkbox"
+								id="years-included60"
+								name="years-included"
+								value="1960"
+							/>
+							<label for="years-included60">1960s</label>
+							<input
+								type="checkbox"
+								id="years-included70"
+								name="years-included"
+								value="1970"
+							/>
+							<label for="years-included70">1970s</label>
+							<input
+								type="checkbox"
+								id="years-included80"
+								name="years-included"
+								value="1980"
+							/>
+							<label for="years-included80">1980s</label>
+							<input
+								type="checkbox"
+								id="years-included90"
+								name="years-included"
+								value="1990"
+							/>
+							<label for="years-included90">1990s</label>
+							<input
+								type="checkbox"
+								id="years-included00"
+								name="years-included"
+								value="2000"
+							/>
+							<label for="years-included00">2000s</label>
+							<input
+								type="checkbox"
+								id="years-included10"
+								name="years-included"
+								value="2010"
+							/>
+							<label for="years-included10">2010s</label>
+						</div>
+						<button type="submit">
+							Generate Model Year
+						</button>
+					</form>
+					<p class="results__model-year"></p>
+				</div>
+				<div class="model-designer__chassis">
+					<!-- panel material -->
+					<h3>Panel Material</h3>
+					<form class="js-model-panel-material">
+						<!-- included model panel materials -->
+						<div class="checkbox-wrapper">
+							<h4>Included Panel Materials</h4>
+							<input
+								type="checkbox"
+								id="panel-materials-included-steel"
+								name="panel-materials-included"
+								value="steel"
+							/>
+							<label for="panel-materials-included-steel"
+								>Steel</label
+							>
+							<input
+								type="checkbox"
+								id="panel-materials-included-treated-steel"
+								name="panel-materials-included"
+								value="treated-steel"
+							/>
+							<label for="panel-materials-included-treated-steel"
+								>Treated Steel</label
+							>
+							<input
+								type="checkbox"
+								id="panel-materials-included-corrosion-resistent-steel"
+								name="panel-materials-included"
+								value="corrosion-resistent-steel"
+							/>
+							<label
+								for="panel-materials-included-corrosion-resistent-steel"
+								>Corrosion Resistent Steel</label
+							>
+							<input
+								type="checkbox"
+								id="panel-materials-included-fibre-glass"
+								name="panel-materials-included"
+								value="fibre-glass"
+							/>
+							<label for="panel-materials-included-fibre-glass"
+								>Fibre Glass</label
+							>
+							<input
+								type="checkbox"
+								id="panel-materials-included-aluminium"
+								name="panel-materials-included"
+								value="aluminium"
+							/>
+							<label for="panel-materials-included-aluminium"
+								>Aluminium</label
+							>
+							<input
+								type="checkbox"
+								id="panel-materials-included-partial-aluminium"
+								name="panel-materials-included"
+								value="partial-aluminium"
+							/>
+							<label
+								for="panel-materials-included-partial-aluminium"
+								>Partial Aluminium</label
+							>
+							<input
+								type="checkbox"
+								id="panel-materials-included-carbon-fibre"
+								name="panel-materials-included"
+								value="carbon-fibre"
+							/>
+							<label for="panel-materials-included-carbon-fibre"
+								>Carbon Fibre</label
+							>
+						</div>
+						<button type="submit">
+							Generate Model Panel Material
+						</button>
+					</form>
+					<p class="results__model-panel-material"></p>
+					<!-- chassis types -->
+					<h3>Chassis Types</h3>
+					<form class="js-model-chassis-type">
+						<!-- included model chassis type -->
+						<div class="checkbox-wrapper">
+							<h4>Included Chassis Types</h4>
+							<input
+								type="checkbox"
+								id="chassis-type-included-ladder"
+								name="chassis-type-included"
+								value="ladder"
+							/>
+							<label for="chassis-type-included-ladder"
+								>Ladder</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-type-included-treated-monocoque"
+								name="chassis-type-included"
+								value="treated-monocoque"
+							/>
+							<label for="chassis-type-included-treated-monocoque"
+								>Monocoque</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-type-included-space-frame"
+								name="chassis-type-included"
+								value="space-frame"
+							/>
+							<label for="chassis-type-included-space-frame"
+								>Space Frame</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-type-included-semi-space-frame"
+								name="chassis-type-included"
+								value="semi-space-frame"
+							/>
+							<label for="chassis-type-included-semi-space-frame"
+								>Semi Space Frame</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-type-included-light-truck-monocoque"
+								name="chassis-type-included"
+								value="light-truck-monocoque"
+							/>
+							<label
+								for="chassis-type-included-light-truck-monocoque"
+								>Light Truck Monocoque</label
+							>
+						</div>
+						<button type="submit">
+							Generate Model Chassis Type
+						</button>
+					</form>
+					<p class="results__model-chassis-type"></p>
+
+					<!-- chassis material -->
+					<h3>Chassis Material</h3>
+					<form class="js-model-chassis-material">
+						<!-- included model chassis material -->
+						<div class="checkbox-wrapper">
+							<h4>Included Chassis Materials</h4>
+							<input
+								type="checkbox"
+								id="chassis-material-included-steel"
+								name="chassis-material-included"
+								value="steel"
+							/>
+							<label for="chassis-material-included-steel"
+								>Steel</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-material-included-galvanized-steel"
+								name="chassis-material-included"
+								value="galvanized-steel"
+							/>
+							<label
+								for="chassis-material-included-galvanized-steel"
+								>Galvanized Steel</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-material-included-corrosion-resistant-steel"
+								name="chassis-material-included"
+								value="corrosion-resistant-steel"
+							/>
+							<label
+								for="chassis-material-included-corrosion-resistant-steel"
+								>Corrosion Resistant Steel</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-material-included-ahs-steel"
+								name="chassis-material-included"
+								value="ahs-steel"
+							/>
+							<label for="chassis-material-included-ahs-steel"
+								>AHS Steel</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-material-included-light-ahs-steel"
+								name="chassis-material-included"
+								value="light-ahs-steel"
+							/>
+							<label
+								for="chassis-material-included-light-ahs-steel"
+								>Light AHS Steel</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-material-included-glued-aluminium"
+								name="chassis-material-included"
+								value="glued-aluminium"
+							/>
+							<label
+								for="chassis-material-included-glued-aluminium"
+								>Glued Aluminium</label
+							>
+							<input
+								type="checkbox"
+								id="chassis-material-included-carbon-fibre"
+								name="chassis-material-included"
+								value="carbon-fibre"
+							/>
+							<label for="chassis-material-included-carbon-fibre"
+								>Carbon Fibre</label
+							>
+						</div>
+						<button type="submit">
+							Generate Model Chassis Material
+						</button>
+					</form>
+					<p class="results__model-chassis-material"></p>
+
+					<!-- engine placement -->
+					<h3>Engine Placement</h3>
+					<form class="js-model-engine-placement">
+						<!-- included model engine placement -->
+						<div class="checkbox-wrapper">
+							<h4>Included Engine Placements</h4>
+							<input
+								type="checkbox"
+								id="engine-placement-included-front-longitudinal"
+								name="engine-placement-included"
+								value="front-longitudinal"
+							/>
+							<label
+								for="engine-placement-included-front-longitudinal"
+								>Front Longitudinal</label
+							>
+							<input
+								type="checkbox"
+								id="engine-placement-included-front-transverse"
+								name="engine-placement-included"
+								value="front-transverse"
+							/>
+							<label
+								for="engine-placement-included-front-transverse"
+								>Front Transverse</label
+							>
+							<input
+								type="checkbox"
+								id="engine-placement-included-mid-longitudinal"
+								name="engine-placement-included"
+								value="mid-longitudinal"
+							/>
+							<label
+								for="engine-placement-included-mid-longitudinal"
+								>Mid Longitudinal</label
+							>
+							<input
+								type="checkbox"
+								id="engine-placement-included-mid-transverse"
+								name="engine-placement-included"
+								value="mid-transverse"
+							/>
+							<label
+								for="engine-placement-included-mid-transverse"
+								>Mid Transverse</label
+							>
+							<input
+								type="checkbox"
+								id="engine-placement-included-rear-longitudinal"
+								name="engine-placement-included"
+								value="rear-longitudinal"
+							/>
+							<label
+								for="engine-placement-included-rear-longitudinal"
+								>Rear Longitudinal</label
+							>
+						</div>
+						<button type="submit">
+							Generate Engine Placement
+						</button>
+					</form>
+					<p class="results__model-engine-placement"></p>
+
+					<!-- suspension -->
+					<h3>Front Suspension</h3>
+					<form class="js-model-suspension-front">
+						<!-- included front suspension -->
+						<div class="checkbox-wrapper">
+							<h4>Included Front Suspension</h4>
+							<input
+								type="checkbox"
+								id="suspension-front-included-solid-axle-leaf"
+								name="suspension-front-included"
+								value="solid-axle-leaf"
+							/>
+							<label
+								for="suspension-front-included-solid-axle-leaf"
+								>Solid Axle Leaf</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-front-included-solid-axle-coil"
+								name="suspension-front-included"
+								value="solid-axle-coil"
+							/>
+							<label
+								for="suspension-front-included-solid-axle-coil"
+								>Solid Axle Coil</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-front-included-torsion-beam"
+								name="suspension-front-included"
+								value="torsion-beam"
+							/>
+							<label for="suspension-front-included-torsion-beam"
+								>Torsion Beam</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-front-included-macpherson-strut"
+								name="suspension-front-included"
+								value="macpherson-strut"
+							/>
+							<label
+								for="suspension-front-included-macpherson-strut"
+								>MacPherson Strut</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-front-included-double-wishbone"
+								name="suspension-front-included"
+								value="double-wishbone"
+							/>
+							<label
+								for="suspension-front-included-double-wishbone"
+								>Double Wishbone</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-front-included-pushrod"
+								name="suspension-front-included"
+								value="pushrod"
+							/>
+							<label for="suspension-front-included-pushrod"
+								>Pushrod</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-front-included-semi-trailing-arm"
+								name="suspension-front-included"
+								value="semi-trailing-arm"
+							/>
+							<label
+								for="suspension-front-included-semi-trailing-arm"
+								>Semi Trailing Arm</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-front-included-multi-link"
+								name="suspension-front-included"
+								value="multi-link"
+							/>
+							<label for="suspension-front-included-multi-link"
+								>Multi-Link</label
+							>
+						</div>
+						<button type="submit">
+							Generate Front Suspension
+						</button>
+					</form>
+					<p class="results__model-suspension-front"></p>
+
+					<!-- suspension rear -->
+					<h3>Rear Suspension</h3>
+					<form class="js-model-suspension-rear">
+						<!-- included rear suspension -->
+						<div class="checkbox-wrapper">
+							<h4>Included Rear Suspension</h4>
+							<input
+								type="checkbox"
+								id="suspension-rear-included-solid-axle-leaf"
+								name="suspension-rear-included"
+								value="solid-axle-leaf"
+							/>
+							<label
+								for="suspension-rear-included-solid-axle-leaf"
+								>Solid Axle Leaf</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-rear-included-solid-axle-coil"
+								name="suspension-rear-included"
+								value="solid-axle-coil"
+							/>
+							<label
+								for="suspension-rear-included-solid-axle-coil"
+								>Solid Axle Coil</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-rear-included-torsion-beam"
+								name="suspension-rear-included"
+								value="torsion-beam"
+							/>
+							<label for="suspension-rear-included-torsion-beam"
+								>Torsion Beam</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-rear-included-macpherson-strut"
+								name="suspension-rear-included"
+								value="macpherson-strut"
+							/>
+							<label
+								for="suspension-rear-included-macpherson-strut"
+								>MacPherson Strut</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-rear-included-double-wishbone"
+								name="suspension-rear-included"
+								value="double-wishbone"
+							/>
+							<label
+								for="suspension-rear-included-double-wishbone"
+								>Double Wishbone</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-rear-included-pushrod"
+								name="suspension-rear-included"
+								value="pushrod"
+							/>
+							<label for="suspension-rear-included-pushrod"
+								>Pushrod</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-rear-included-semi-trailing-arm"
+								name="suspension-rear-included"
+								value="semi-trailing-arm"
+							/>
+							<label
+								for="suspension-rear-included-semi-trailing-arm"
+								>Semi Trailing Arm</label
+							>
+							<input
+								type="checkbox"
+								id="suspension-rear-included-multi-link"
+								name="suspension-rear-included"
+								value="multi-link"
+							/>
+							<label for="suspension-rear-included-multi-link"
+								>Multi-Link</label
+							>
+						</div>
+						<button type="submit">
+							Generate Rear Suspension
+						</button>
+					</form>
+					<p class="results__model-suspension-rear"></p>
+
+					<!-- chassis quality -->
+					<h3>Chassis Quality</h3>
+					<button type="button" class="js-model-chassis-quality">
+						Generate Chassis Quality
+					</button>
+					<p class="results__model-chassis-quality"></p>
+				</div>
+			</section>
+
+			<section class="engine-designer">
+				<!-- engine designer -->
+				<h2>Engine Designer</h2>
+				<!-- family -->
+				<div class="engine-designer__family">
+					<h3>Engine Block</h3>
+					<button type="button" class="js-engine-block">
+						Generate Engine Block
+					</button>
+					<p class="results__engine-block"></p>
+
+					<h3>Engine</h3>
+					<form class="js-engine-block-material">
+						<!-- included block materials -->
+						<div class="checkbox-wrapper">
+							<h4>Included Engine Block Materials</h4>
+							<input
+								type="checkbox"
+								id="engine-block-materials-included-cast-iron"
+								name="engine-block-materials-included"
+								value="cast-iron"
+							/>
+							<label
+								for="engine-block-materials-included-cast-iron"
+								>Cast Iron</label
+							>
+							<input
+								type="checkbox"
+								id="engine-block-materials-included-aluminium"
+								name="engine-block-materials-included"
+								value="aluminium"
+							/>
+							<label
+								for="engine-block-materials-included-aluminium"
+								>Aluminium</label
+							>
+							<input
+								type="checkbox"
+								id="engine-block-materials-included-alsi"
+								name="engine-block-materials-included"
+								value="alsi"
+							/>
+							<label for="engine-block-materials-included-alsi"
+								>AlSi</label
+							>
+							<input
+								type="checkbox"
+								id="engine-block-materials-included-magnesium"
+								name="engine-block-materials-included"
+								value="magnesium"
+							/>
+							<label
+								for="engine-block-materials-included-magnesium"
+								>Magnesium</label
+							>
+						</div>
+						<button type="submit">
+							Generate Engine Block Materials
+						</button>
+					</form>
+					<p class="results__engine-block-material"></p>
+
+					<!-- engine bore -->
+					<h3>Engine Bore</h3>
+					<button type="button" class="js-engine-bore">
+						Generate Engine Bore
+					</button>
+					<p class="results__engine-bore"></p>
+
+					<!-- engine stroke -->
+					<h3>Engine Stroke</h3>
+					<button type="button" class="js-engine-stroke">
+						Generate Engine Bore
+					</button>
+					<p class="results__engine-stroke"></p>
+
+					<!-- engine head and valves -->
+					<h3>Engine Head and Valves</h3>
+					<button type="button" class="js-engine-head-valves">
+						Generate Engine Head
+					</button>
+					<p class="results__engine-head-valves"></p>
+
+					<!-- engine head material -->
+					<h3>Engine Head Material</h3>
+					<button type="button" class="js-engine-head-material">
+						Generate Engine Head Material
+					</button>
+					<p class="results__engine-head-material"></p>
+
+					<!-- engine VVL -->
+					<h3>Engine VVL</h3>
+					<button type="button" class="js-engine-vvl">
+						Generate Engine VVL
+					</button>
+					<p class="results__engine-vvl"></p>
+				</div>
+
+				<!-- bottom end -->
+				<div class="engine-designer__bottom-end">
+					<!-- crank -->
+					<h3>Engine Crank</h3>
+					<form class="js-engine-crank-material">
+						<!-- included crank materials -->
+						<div class="checkbox-wrapper">
+							<h4>Included Engine Crank Materials</h4>
+							<input
+								type="checkbox"
+								id="engine-crank-materials-included-cast-iron"
+								name="engine-crank-materials-included"
+								value="cast-iron"
+							/>
+							<label
+								for="engine-crank-materials-included-cast-iron"
+								>Cast Iron</label
+							>
+							<input
+								type="checkbox"
+								id="engine-crank-materials-included-forged-steel"
+								name="engine-crank-materials-included"
+								value="forged-steel"
+							/>
+							<label
+								for="engine-crank-materials-included-forged-steel"
+								>Forged Steel</label
+							>
+							<input
+								type="checkbox"
+								id="engine-crank-materials-included-billet-steel"
+								name="engine-crank-materials-included"
+								value="billet-steel"
+							/>
+							<label
+								for="engine-crank-materials-included-billet-steel"
+								>Billet Steel</label
+							>
+							<input
+								type="checkbox"
+								id="engine-crank-materials-included-cast-iron-flat-plane"
+								name="engine-crank-materials-included"
+								value="cast-iron-flat-plane"
+							/>
+							<label
+								for="engine-crank-materials-included-cast-iron-flat-plane"
+								>Cast Iron Flat Plane</label
+							>
+							<input
+								type="checkbox"
+								id="engine-crank-materials-included-forged-steel-flat-plane"
+								name="engine-crank-materials-included"
+								value="forged-steel-flat-plane"
+							/>
+							<label
+								for="engine-crank-materials-included-forged-steel-flat-plane"
+								>Forged Steel Flat Plane</label
+							>
+							<input
+								type="checkbox"
+								id="engine-crank-materials-included-billet-steel-flat-plane"
+								name="engine-crank-materials-included"
+								value="billet-steel-flat-plane"
+							/>
+							<label
+								for="engine-crank-materials-included-billet-steel-flat-plane"
+								>Billet Steel Flat Plane</label
+							>
+						</div>
+						<button type="submit">
+							Generate Engine Crank Material
+						</button>
+					</form>
+					<p class="results__engine-crank-material"></p>
+
+					<!-- conrods -->
+					<h3>Engine Conrods</h3>
+					<form class="js-engine-conrods-material">
+						<!-- included conrods materials -->
+						<div class="checkbox-wrapper">
+							<h4>Included Engine Conrods Materials</h4>
+							<input
+								type="checkbox"
+								id="engine-conrods-materials-included-cast"
+								name="engine-conrods-materials-included"
+								value="cast"
+							/>
+							<label for="engine-conrods-materials-included-cast"
+								>Cast</label
+							>
+							<input
+								type="checkbox"
+								id="engine-conrods-materials-included-heavy-duty-cast"
+								name="engine-conrods-materials-included"
+								value="heavy-duty-cast"
+							/>
+							<label
+								for="engine-conrods-materials-included-heavy-duty-cast"
+								>Heavy Duty Cast</label
+							>
+							<input
+								type="checkbox"
+								id="engine-conrods-materials-included-heavy-duty-forged"
+								name="engine-conrods-materials-included"
+								value="heavy-duty-forged"
+							/>
+							<label
+								for="engine-conrods-materials-included-heavy-duty-forged"
+								>Heavy Duty Forged</label
+							>
+							<input
+								type="checkbox"
+								id="engine-conrods-materials-included-lightweight-forged"
+								name="engine-conrods-materials-included"
+								value="lightweight-forged"
+							/>
+							<label
+								for="engine-conrods-materials-included-lightweight-forged"
+								>Lightweight Forged</label
+							>
+							<input
+								type="checkbox"
+								id="engine-conrods-materials-included-lightweight-titanium"
+								name="engine-conrods-materials-included"
+								value="lightweight-titanium"
+							/>
+							<label
+								for="engine-conrods-materials-included-lightweight-titanium"
+								>Lightweight Titanium</label
+							>
+						</div>
+						<button type="submit">
+							Generate Engine Conrods Material
+						</button>
+					</form>
+					<p class="results__engine-conrods-material"></p>
+
+					<!-- conrods -->
+					<h3>Engine Pistons</h3>
+					<form class="js-engine-pistons-material">
+						<!-- included pistons materials -->
+						<div class="checkbox-wrapper">
+							<h4>Included Engine Pistons Materials</h4>
+							<input
+								type="checkbox"
+								id="engine-pistons-materials-included-cast"
+								name="engine-pistons-materials-included"
+								value="cast"
+							/>
+							<label for="engine-pistons-materials-included-cast"
+								>Cast</label
+							>
+							<input
+								type="checkbox"
+								id="engine-pistons-materials-included-heavy-duty-cast"
+								name="engine-pistons-materials-included"
+								value="heavy-duty-cast"
+							/>
+							<label
+								for="engine-pistons-materials-included-heavy-duty-cast"
+								>Heavy Duty Cast</label
+							>
+							<input
+								type="checkbox"
+								id="engine-pistons-materials-included-forged"
+								name="engine-pistons-materials-included"
+								value="forged"
+							/>
+							<label
+								for="engine-pistons-materials-included-forged"
+								>Forged</label
+							>
+							<input
+								type="checkbox"
+								id="engine-pistons-materials-included-hypereutectic-cast"
+								name="engine-pistons-materials-included"
+								value="hypereutectic-cast"
+							/>
+							<label
+								for="engine-pistons-materials-included-hypereutectic-cast"
+								>Hypereutectic Cast</label
+							>
+							<input
+								type="checkbox"
+								id="engine-pistons-materials-included-low-friction-cast"
+								name="engine-pistons-materials-included"
+								value="low-friction-cast"
+							/>
+							<label
+								for="engine-pistons-materials-included-low-friction-cast"
+								>Low Friction Cast</label
+							>
+							<input
+								type="checkbox"
+								id="engine-pistons-materials-included-lightweight-forged"
+								name="engine-pistons-materials-included"
+								value="lightweight-forged"
+							/>
+							<label
+								for="engine-pistons-materials-included-lightweight-forged"
+								>Lightweight Forged</label
+							>
+						</div>
+						<button type="submit">
+							Generate Engine Pistons Material
+						</button>
+					</form>
+					<p class="results__engine-pistons-material"></p>
+
+					<!-- engine bottom end quality -->
+					<h3>Engine Bottom End Quality</h3>
+					<button type="button" class="js-engine-bottom-end-quality">
+						Generate Engine Bottom End Quality
+					</button>
+					<p class="results__engine-bottom-end-quality"></p>
+				</div>
+
+				<!-- top end -->
+				<div class="engine-designer__top-end">
+					<!-- engine compression -->
+					<h3>Engine Compression</h3>
+					<button type="button" class="js-engine-compression">
+						Generate Engine Compression
+					</button>
+					<p class="results__engine-compression"></p>
+
+					<!-- engine cam profile -->
+					<h3>Engine Cam Profile</h3>
+					<button type="button" class="js-engine-cam-profile">
+						Generate Engine Cam Profile
+					</button>
+					<p class="results__engine-cam-profile"></p>
+
+					<!-- engine vvl profile -->
+					<h3>Engine VVL Profile</h3>
+					<button type="button" class="js-engine-vvl-profile">
+						Generate Engine VVL Profile
+					</button>
+					<p class="results__engine-vvl-profile"></p>
+
+					<!-- engine vvt -->
+					<h3>Engine VVT</h3>
+					<button type="button" class="js-engine-vvt">
+						Generate Engine VVT
+					</button>
+					<p class="results__engine-vvt"></p>
+
+					<!-- engine top end quality -->
+					<h3>Engine Top End Quality</h3>
+					<button type="button" class="js-engine-top-end-quality">
+						Generate Engine Top End Quality
+					</button>
+					<p class="results__engine-top-end-quality"></p>
+				</div>
+
+				<!-- aspiration -->
+				<div class="engine-designer__aspiration">
+					<!-- aspiration type -->
+					<h3>Aspiration Type</h3>
+					<button type="button" class="js-engine-aspiration-type">
+						Generate Aspiration Type
+					</button>
+					<p class="results__engine-aspiration-type"></p>
+
+					<!-- turbo charger bearing -->
+					<h3>Turbo Charger Bearing</h3>
+					<button
+						type="button"
+						class="js-engine-turbo-charger-bearing"
+					>
+						Generate Turbo Charger Bearing
+					</button>
+					<p class="results__engine-turbo-charger-bearing"></p>
+
+					<!-- turbo charger preset -->
+					<h3>Turbo Charger Preset</h3>
+					<button
+						type="button"
+						class="js-engine-turbo-charger-preset"
+					>
+						Generate Turbo Charger Preset
+					</button>
+					<p class="results__engine-turbo-charger-preset"></p>
+
+					<!-- turbo charger quality -->
+					<h3>Engine Turbo Charger Quality</h3>
+					<button
+						type="button"
+						class="js-engine-turbo-charger-quality"
+					>
+						Generate Engine Turbo Charger Quality
+					</button>
+					<p class="results__engine-turbo-charger-quality"></p>
+				</div>
+
+				<!-- fuel system -->
+				<div class="engine-designer__fuel-system">
+					<!-- fuel system type -->
+					<h3>Fuel System Type</h3>
+					<button type="button" class="js-engine-fuel-system-type">
+						Generate Fuel System Type
+					</button>
+					<p class="results__engine-fuel-system-type"></p>
+
+					<!-- fuel system quality -->
+					<h3>Engine Turbo Charger Quality</h3>
+					<button
+						type="button"
+						class="js-engine-turbo-charger-quality"
+					>
+						Generate Engine Turbo Charger Quality
+					</button>
+					<p class="results__engine-turbo-charger-quality"></p>
+				</div>
+			</section>
+		</main>
+		<!-- script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
